@@ -4,8 +4,273 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* MAIN FOOTER */
+
+.main-footer {
+    background: #081a35;
+    color: #fff;
+    padding: 75px 8% 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
+    gap: 45px;
+    max-width: 1400px;
+    margin: auto;
+    padding-bottom: 60px;
+}
+
+/* FOOTER HEADINGS */
+
+.footer-column h2 {
+    font-size: 27px;
+    margin-bottom: 22px;
+    color: #fff;
+}
+
+.footer-column h2 span {
+    color: #3185ff;
+}
+
+.footer-column h3 {
+    font-size: 19px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.footer-column h3::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #3185ff;
+    margin-top: 12px;
+}
+
+/* ABOUT */
+
+.footer-about p {
+    color: #aab8cd;
+    font-size: 14px;
+    line-height: 1.9;
+    max-width: 300px;
+}
+
+/* LINKS */
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 15px;
+}
+
+.footer-column ul li a {
+    color: #aab8cd;
+    text-decoration: none;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.footer-column ul li a:hover {
+    color: #3185ff;
+    padding-left: 7px;
+}
+
+/* SOCIAL LINKS */
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    border: 1px solid #344966;
+    padding: 9px 12px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.social-links a:hover {
+    background: #1764cf;
+    border-color: #1764cf;
+}
+
+/* CONTACT */
+
+.footer-contact p {
+    color: #aab8cd;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.footer-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 13px 25px;
+    background: #1764cf;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.footer-btn:hover {
+    background: #fff;
+    color: #1764cf;
+    transform: translateY(-3px);
+}
+
+/* BOTTOM FOOTER */
+
+.footer-bottom {
+    border-top: 1px solid #263b59;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-bottom p {
+    color: #8fa2bd;
+    font-size: 13px;
+}
+
+.footer-bottom div {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-bottom a {
+    color: #8fa2bd;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.footer-bottom a:hover {
+    color: #3185ff;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-footer {
+        padding: 50px 7% 0;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding-bottom: 40px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-bottom div {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+    </style>
 </head>
 <body>
-    
+    <footer class="main-footer">
+    <div class="footer-container">
+
+        <!-- Brand -->
+        <div class="footer-column footer-about">
+            <h2>Richmond<span> Institute</span></h2>
+            <p>
+                Empowering futures with excellence in education.
+                Learn professional skills and build your career
+                with Richmond Institute.
+            </p>
+
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+
+        <!-- Courses -->
+        <div class="footer-column">
+            <h3>Our Courses</h3>
+            <ul>
+                <li><a href="#">Short Courses</a></li>
+                <li><a href="#">Diploma Courses</a></li>
+                <li><a href="#">International Courses</a></li>
+                <li><a href="#">Digital Marketing</a></li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Graphic Designing</a></li>
+            </ul>
+        </div>
+
+        <!-- About -->
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Leadership</a></li>
+                <li><a href="#">Mission & Vision</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Student Testimonials</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-column footer-contact">
+            <h3>Contact Us</h3>
+
+            <p>📍 Australia House, P-56 Chenab Market,
+                Madina Town, Faisalabad</p>
+
+            <p>📞 +92 300 156 3009</p>
+            <p>📞 +92 304 111 6065</p>
+
+            <p>✉ info@ri.edu.pk</p>
+
+            <a href="https://join.ri.edu.pk/" class="footer-btn">
+                Join Now →
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="footer-bottom">
+        <p>© 2026 Richmond Institute. All Rights Reserved.</p>
+
+        <div>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+    </div>
+
+</footer>
 </body>
 </html>
