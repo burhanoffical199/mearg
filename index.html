@@ -192,6 +192,141 @@
     .footer-bottom div {
         flex-wrap: wrap;
         justify-content: center;
+        .why-richmond {
+    width: 100%;
+    padding: 55px 8%;
+    background: #ffffff;
+}
+
+.section-heading {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #303030;
+    margin-bottom: 18px;
+}
+
+.section-heading p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* CARDS */
+
+.cards-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.info-card {
+    background: linear-gradient(135deg, #05285f, #071b70);
+    color: white;
+    padding: 30px 23px;
+    border-radius: 20px 0 20px 0;
+    min-height: 320px;
+    transition: 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.info-card h3 {
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 22px;
+    line-height: 1.4;
+}
+
+.info-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: justify;
+    color: white;
+}
+
+/* FLEXIBLE LEARNING */
+
+.flexible-learning {
+    width: 100%;
+    padding: 50px 8% 60px;
+    text-align: center;
+    background: white;
+}
+
+.flexible-learning h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #303030;
+    margin-bottom: 18px;
+}
+
+.flexible-learning p {
+    max-width: 1000px;
+    margin: auto;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* TABLET */
+
+@media (max-width: 950px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .why-richmond {
+        padding: 40px 7%;
+    }
+
+    .section-heading h2,
+    .flexible-learning h2 {
+        font-size: 28px;
+    }
+
+    .section-heading p,
+    .flexible-learning p {
+        font-size: 15px;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .info-card {
+        min-height: auto;
+        padding: 28px 22px;
+    }
+
+    .info-card h3 {
+        font-size: 20px;
+    }
+
+    .info-card p {
+        font-size: 15px;
+    }
+
+    .flexible-learning {
+        padding: 40px 7%;
     }
 }
     </style>
@@ -272,5 +407,58 @@
     </div>
 
 </footer>
+    <section class="why-richmond">
+    <div class="section-heading">
+        <h2>Why Richmond Institute?</h2>
+        <p>
+            Whether you are a student looking to build a career, a professional upgrading your skills, or a fresher exploring the world of IT,
+            Richmond Institute is Faisalabad's most trusted computer short courses center. Our NAVTTC-registered, internationally
+            recognized programs are designed to deliver real-world results.
+        </p>
+    </div>
+
+    <div class="cards-container">
+
+        <div class="info-card">
+            <h3>Learn from Industry Expert</h3>
+            <p>
+                Our instructors are industry professionals with hands-on experience in digital marketing, SEO, web development,
+                graphic design, and language training. At Richmond Institute, you are not just learning theory.
+                You are gaining real, market-ready skills from people who work in the industry every day.
+            </p>
+        </div>
+
+        <div class="info-card">
+            <h3>From Learning to Earning</h3>
+            <p>
+                Richmond Institute's short courses are structured around Pakistan's job market and global freelancing opportunities.
+                We provide career counselling, internship placements, and freelancing mentorship so that every student has a
+                clear pathway from the classroom to professional success.
+            </p>
+        </div>
+
+        <div class="info-card">
+            <h3>Global Recognition and Certifications</h3>
+            <p>
+                Our certifications are backed by Southern Cross Institute Australia, Richmond School of Business Australia,
+                and Southern Cross School of Business Australia, giving your qualification international credibility.
+                Richmond Institute is also officially registered with NAVTTC Pakistan, making our courses eligible
+                for government-recognized vocational certification.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="flexible-learning">
+    <h2>Flexible Learning — For Everyone</h2>
+    <p>
+        Richmond Institute offers flexible class timings, morning and evening batches,
+        and dedicated sessions for female students, making us the ideal institute
+        for students, working professionals, and homemakers across Faisalabad.
+        We believe quality education should be accessible to all.
+    </p>
+</section>
 </body>
 </html>
